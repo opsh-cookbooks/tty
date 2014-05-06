@@ -7,6 +7,9 @@ debian*)
   sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT="console=ttyS0"/g' /etc/default/grub
   update-grub
 ;;
+centos*)
+  #https://gist.github.com/stefanozanella/4549464
+  exit 1
 *)
   exit 1
   ;;
